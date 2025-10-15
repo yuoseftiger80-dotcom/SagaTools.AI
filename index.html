@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Language set to English by default -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAGATools.AI - Explore the Smartest Online Tools for Free</title>
+    <meta name="description" content="SAGATools.AI offers fast, free, and smart AI & online tools in one powerful hub. Instantly access TikTok Video Downloader, Background Remover, Text-to-Speech, PDF Tools, and AI Image Generator.">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="SAGATools.AI - Free & Powerful AI & Web Tools">
+    <meta property="og:description" content="Fast, free, and smart AI & online tools in one powerful hub. Instant access to everything you need!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com"> <!-- Replace with your actual website URL -->
+    <meta property="og:image" content="https://www.yourwebsite.com/thumbnail.jpg"> <!-- Replace with your actual image URL -->
+    <meta property="og:image:alt" content="SAGATools.AI - Smart Online Tools">
+    <meta property="og:locale" content="en_US"> <!-- Default to English -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts for futuristic look -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS Library CSS for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper.js CSS for Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Analytics - Replace UA-XXXXX-Y with your actual tracking ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXX-Y');
+    </script>
+</head>
+<body class="dark-mode"> <!-- Default to dark mode for consistency with previous design aesthetic -->
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon" aria-label="SAGATools.AI Logo"><i class="fas fa-satellite-dish"></i></span> 
+                <h1 class="site-title" data-en="SAGATools.AI" data-ar="SAGATools.AI">SAGATools.AI</h1>
+                <p class="site-description" data-en="Explore the smartest online tools in one click." data-ar="استكشف أذكى الأدوات أونلاين بضغطة زر.">Explore the smartest online tools in one click.</p>
+            </div>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#hero" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                    <li><a href="#tools" data-en="Tools" data-ar="الأدوات">Tools</a></li>
+                    <li><a href="#about" data-en="About" data-ar="عنّا">About</a></li>
+                    <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <!-- Language Toggle Button -->
+                <button id="languageToggle" class="control-btn" aria-label="Toggle Language" data-en="عربي" data-ar="English"><i class="fas fa-language"></i></button>
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="control-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-en="All the AI & Online Tools You Need — In One Powerful Hub." data-ar="كل أدوات AI والويب التي تحتاجها — في مكان واحد قوي.">All the AI & Online Tools You Need — In One Powerful Hub.</h2>
+            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-en="Fast, free, and smart. Get instant access to every useful AI and web tool with just one click." data-ar="سريعة، مجانية، وذكية. احصل على وصول فوري لكل أداة AI وويب مفيدة بنقرة واحدة فقط.">Fast, free, and smart. Get instant access to every useful AI and web tool with just one click.</p>
+            <a href="#tools" class="btn primary-btn" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000" aria-label="Start Exploring Tools" data-en="Start Exploring" data-ar="ابدأ الاستكشاف">Start Exploring</a>
+        </div>
+    </section>
+
+    <!-- Tools Section (Main Focus) -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h3 data-aos="fade-right" data-aos-duration="800" data-en="Our Smart Tools" data-ar="أدواتنا الذكية">Our Smart Tools</h3>
+            
+            <!-- Swiper -->
+            <div class="swiper tools-carousel" data-aos="fade-up" data-aos-duration="1200">
+                <div class="swiper-wrapper">
+                    <!-- Tool Card 1: TikTok Video Downloader -->
+                    <div class="swiper-slide tool-card">
+                        <div class="icon-wrapper">
+                            <!-- Custom SVG Icon for TikTok -->
+                            <svg class="graphic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.0001 2.00003C12.0001 2.00003 12.0001 2.00003 12.0001 2.00003V14.2858C12.0001 14.2858 12.0001 14.2858 12.0001 14.2858C12.0001 16.9429 9.8732 19.0435 7.20005 19.0435C4.52689 19.0435 2.40005 16.9429 2.40005 14.2858C2.40005 11.6286 4.52689 9.52802 7.20005 9.52802C7.90005 9.52802 8.57147 9.69574 9.17147 9.99999V4.60001C8.57147 4.30001 7.90005 4.13229 7.20005 4.13229C2.40005 4.13229 0.0000512695 8.16912 0.0000512695 12.8572C0.0000512695 17.5453 2.40005 21.5821 7.20005 21.5821C12.0001 21.5821 14.4001 17.5453 14.4001 12.8572V2.00003H12.0001ZM16.8001 2.00003V14.2858C16.8001 16.9429 14.6732 19.0435 12.0001 19.0435C9.32689 19.0435 7.20005 16.9429 7.20005 14.2858C7.20005 11.6286 9.32689 9.52802 12.0001 9.52802C12.7001 9.52802 13.3715 9.69574 13.9715 9.99999V4.60001C13.3715 4.30001 12.7001 4.13229 12.0001 4.13229C7.20005 4.13229 4.80005 8.16912 4.80005 12.8572C4.80005 17.5453 7.20005 21.5821 12.0001 21.5821C16.8001 21.5821 19.2001 17.5453 19.2001 12.8572V2.00003H16.8001ZM21.6001 2.00003V14.2858C21.6001 16.9429 19.4732 19.0435 16.8001 19.0435C14.1269 19.0435 12.0001 16.9429 12.0001 14.2858C12.0001 11.6286 14.1269 9.52802 16.8001 9.52802C17.5001 9.52802 18.1715 9.69574 18.7715 9.99999V4.60001C18.1715 4.30001 17.5001 4.13229 16.8001 4.13229C12.0001 4.13229 9.60005 8.16912 9.60005 12.8572C9.60005 17.5453 12.0001 21.5821 16.8001 21.5821C21.6001 21.5821 24.0001 17.5453 24.0001 12.8572V2.00003H21.6001Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 data-en="TikTok Video Downloader" data-ar="تنزيل فيديوهات تيك توك">TikTok Video Downloader</h4>
+                        <p data-en="Save TikTok videos instantly without watermark. Example: Educational videos." data-ar="احفظ فيديوهات تيك توك بدون علامة مائية فورًا. مثال: تنزيل فيديوهات تدريبية.">Save TikTok videos instantly without watermark. Example: Educational videos.</p>
+                        <div class="tool-buttons">
+                            <a href="redirect.html?url=https://shrinkme.click/srnQ" class="btn secondary-btn tool-primary-btn" aria-label="Open TikTok Downloader Tool 1" data-en="Open Tool 1" data-ar="فتح الأداة 1">Open Tool 1</a>
+                            <a href="redirect.html?url=https://shrinkme.click/qFpw" class="btn secondary-btn tool-fallback-btn" aria-label="Open TikTok Downloader Tool 2 (Fallback)" data-en="Open Tool 2" data-ar="فتح الأداة 2">Open Tool 2</a>
+                        </div>
+                        <small class="redirect-info" data-en="We securely redirect to the official tool — powered by ShrinkMe." data-ar="نحن نوجهك بأمان إلى الأداة الرسمية — مدعوم بواسطة ShrinkMe.">We securely redirect to the official tool — powered by ShrinkMe.</small>
+                    </div>
+
+                    <!-- Tool Card 2: Background Remover -->
+                    <div class="swiper-slide tool-card">
+                        <div class="icon-wrapper">
+                            <!-- Custom SVG Icon for Background Remover -->
+                            <svg class="graphic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4ZM10 12H14V14H10V12ZM10 8H14V10H10V8ZM10 16H14V18H10V16ZM6 10H8V14H6V10ZM16 10H18V14H16V10Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 data-en="Background Remover" data-ar="مزيل الخلفيات">Background Remover</h4>
+                        <p data-en="Instantly remove backgrounds from any photo using AI. Tip: For product photos or profiles." data-ar="أزل الخلفية من أي صورة فورًا باستخدام AI. Tip: لصور المنتجات أو البروفايلات.">Instantly remove backgrounds from any photo using AI. Tip: For product photos or profiles.</p>
+                        <div class="tool-buttons">
+                            <a href="redirect.html?url=https://shrinkme.click/C7wI06Y" class="btn secondary-btn tool-primary-btn" aria-label="Open Background Remover Tool 1" data-en="Open Tool 1" data-ar="فتح الأداة 1">Open Tool 1</a>
+                            <a href="redirect.html?url=https://shrinkme.click/Q1Pqf" class="btn secondary-btn tool-fallback-btn" aria-label="Open Background Remover Tool 2 (Fallback)" data-en="Open Tool 2" data-ar="فتح الأداة 2">Open Tool 2</a>
+                        </div>
+                        <small class="redirect-info" data-en="We securely redirect to the official tool — powered by ShrinkMe." data-ar="نحن نوجهك بأمان إلى الأداة الرسمية — مدعوم بواسطة ShrinkMe.">We securely redirect to the official tool — مدعوم بواسطة ShrinkMe.</small>
+                    </div>
+
+                    <!-- Tool Card 3: Text-to-Speech Generator -->
+                    <div class="swiper-slide tool-card">
+                        <div class="icon-wrapper">
+                            <!-- Custom SVG Icon for Text-to-Speech -->
+                            <svg class="graphic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM11 17H13V19H11V17ZM11 5H13V15H11V5Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 data-en="Text-to-Speech Generator" data-ar="مولد النص إلى كلام">Text-to-Speech Generator</h4>
+                        <p data-en="Turn any text into natural human-like speech. Example: For creating video voiceovers." data-ar="حوّل أي نص إلى كلام بشري طبيعي. مثال: لإنشاء تعليقات صوتية للفيديوهات.">Turn any text into natural human-like speech. Example: For creating video voiceovers.</p>
+                        <div class="tool-buttons">
+                            <a href="redirect.html?url=https://shrinkme.click/Gg8xX8" class="btn secondary-btn tool-primary-btn" aria-label="Open Text-to-Speech Tool 1" data-en="Open Tool 1" data-ar="فتح الأداة 1">Open Tool 1</a>
+                            <a href="redirect.html?url=https://shrinkme.click/ml8zWXt" class="btn secondary-btn tool-fallback-btn" aria-label="Open Text-to-Speech Tool 2 (Fallback)" data-en="Open Tool 2" data-ar="فتح الأداة 2">Open Tool 2</a>
+                        </div>
+                        <small class="redirect-info" data-en="We securely redirect to the official tool — powered by ShrinkMe." data-ar="نحن نوجهك بأمان إلى الأداة الرسمية — مدعوم بواسطة ShrinkMe.">We securely redirect to the official tool — powered by ShrinkMe.</small>
+                    </div>
+
+                    <!-- Tool Card 4: PDF Tools Suite -->
+                    <div class="swiper-slide tool-card">
+                        <div class="icon-wrapper">
+                            <!-- Custom SVG Icon for PDF Tools -->
+                            <svg class="graphic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2ZM12 18H10V16H12V18ZM12 14H10V12H12V14ZM12 10H10V8H12V10ZM14 2.5V7C14 7.55228 14.4477 8 15 8H19.5L14 2.5Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 data-en="PDF Tools Suite" data-ar="مجموعة أدوات PDF">PDF Tools Suite</h4>
+                        <p data-en="Merge, compress, or edit PDFs online in seconds. Tip: For reducing document size." data-ar="ادمج، اضغط، أو عدّل ملفات PDF أونلاين بثوانٍ. Tip: لتقليص حجم المستندات.">Merge, compress, or edit PDFs online in seconds. Tip: For reducing document size.</p>
+                        <div class="tool-buttons">
+                            <a href="redirect.html?url=https://shrinkme.click/hW9cslCb" class="btn secondary-btn tool-primary-btn" aria-label="Open PDF Tools Suite Tool 1" data-en="Open Tool 1" data-ar="فتح الأداة 1">Open Tool 1</a>
+                            <a href="redirect.html?url=https://shrinkme.click/nNniB" class="btn secondary-btn tool-fallback-btn" aria-label="Open PDF Tools Suite Tool 2 (Fallback)" data-en="Open Tool 2" data-ar="فتح الأداة 2">Open Tool 2</a>
+                        </div>
+                        <small class="redirect-info" data-en="We securely redirect to the official tool — powered by ShrinkMe." data-ar="نحن نوجهك بأمان إلى الأداة الرسمية — مدعوم بواسطة ShrinkMe.">We securely redirect to the official tool — powered by ShrinkMe.</small>
+                    </div>
+
+                    <!-- Tool Card 5: AI Image Generator -->
+                    <div class="swiper-slide tool-card">
+                        <div class="icon-wrapper">
+                            <!-- Custom SVG Icon for AI Image Generator -->
+                            <svg class="graphic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4ZM12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10C13.1046 10 14 9.10457 14 8C14 6.89543 13.1046 6 12 6ZM8 12C8 10.8954 8.89543 10 10 10C11.1046 10 12 10.8954 12 12C12 13.1046 11.1046 14 10 14C8.89543 14 8 13.1046 8 12ZM14 12C14 10.8954 14.8954 10 16 10C17.1046 10 18 10.8954 18 12C18 13.1046 17.1046 14 16 14C14.8954 14 14 13.1046 14 12ZM12 14C10.8954 14 10 14.8954 10 16C10 17.1046 10.8954 18 12 18C13.1046 18 14 17.1046 14 16C14 14.8954 13.1046 14 12 14Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 data-en="AI Image Generator" data-ar="مولد الصور بالذكاء الاصطناعي">AI Image Generator</h4>
+                        <p data-en="Create amazing AI art from any text prompt. Example: For designing visual concepts." data-ar="ابتكر فنون AI مذهلة من أي وصف نصي. مثال: تصميم مفاهيم بصرية.">Create amazing AI art from any text prompt. Example: For designing visual concepts.</p>
+                        <div class="tool-buttons">
+                            <a href="redirect.html?url=https://shrinkme.click/NNZCq" class="btn secondary-btn tool-primary-btn" aria-label="Open AI Image Generator Tool 1" data-en="Open Tool 1" data-ar="فتح الأداة 1">Open Tool 1</a>
+                            <a href="redirect.html?url=https://shrinkme.click/rRSXky" class="btn secondary-btn tool-fallback-btn" aria-label="Open AI Image Generator Tool 2 (Fallback)" data-en="Open Tool 2" data-ar="فتح الأداة 2">Open Tool 2</a>
+                        </div>
+                        <small class="redirect-info" data-en="We securely redirect to the official tool — powered by ShrinkMe." data-ar="نحن نوجهك بأمان إلى الأداة الرسمية — مدعوم بواسطة ShrinkMe.">We securely redirect to the official tool — powered by ShrinkMe.</small>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <small class="explore-more-hint" data-aos="fade-up" data-aos-delay="600" data-en="Swipe or use arrows to discover more tools!" data-ar="اسحب أو استخدم الأسهم لاكتشاف المزيد من الأدوات!"></small>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h3 data-aos="fade-left" data-aos-duration="800" data-en="Why SAGATools.AI?" data-ar="لماذا SAGATools.AI؟">Why SAGATools.AI?</h3>
+            <p data-aos="fade-up" data-aos-duration="1000" data-en="SAGATools.AI is your one-stop destination for the smartest online utilities. No sign-up. No ad pop-ups. Just instant tools that make your work faster and smarter. Each tool is carefully selected and updated to ensure top performance and real value." data-ar="SAGATools.AI هي وجهتك الشاملة لأذكى الأدوات أونلاين. لا تسجيل. لا نوافذ منبثقة للإعلانات. فقط أدوات فورية تجعل عملك أسرع وأذكى. يتم اختيار كل أداة بعناية وتحديثها لضمان أفضل أداء وقيمة حقيقية.">SAGATools.AI is your one-stop destination for the smartest online utilities. No sign-up. No ad pop-ups. Just instant tools that make your work faster and smarter. Each tool is carefully selected and updated to ensure top performance and real value.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section (Placeholder) -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h3 data-aos="fade-right" data-aos-duration="800" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h3>
+            <p data-aos="fade-up" data-aos-duration="1000" data-en="Have questions or suggestions? Reach out to us!" data-ar="هل لديك أسئلة أو اقتراحات؟ لا تتردد في التواصل معنا!">Have questions or suggestions? Reach out to us!</p>
+            <a href="mailto:saga.studio666@gmail.com" class="btn primary-btn" aria-label="Send us an email" data-en="Send Email" data-ar="أرسل بريدًا إلكترونيًا">Send Email</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p data-en="&copy; 2025 SAGATools.AI – Made with passion to make your online life smarter." data-ar="&copy; 2025 SAGATools.AI – صُنع بشغف لجعل حياتك الرقمية أذكى.">&copy; 2025 SAGATools.AI – Made with passion to make your online life smarter.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <a href="#hero" id="backToTopBtn" class="back-to-top-btn" title="Back to top" aria-label="Back to top of page">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

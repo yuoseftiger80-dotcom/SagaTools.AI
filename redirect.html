@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        .spinner {
+            border: 4px solid rgba(0, 240, 255, 0.3);
+            border-top: 4px solid #00f0ff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h2 {
+            color: #00f0ff;
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        a {
+            color: #9b00ff;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="spinner"></div>
+    <h2>Redirecting to the tool...</h2>
+    <p>Please wait a moment while we securely redirect you.</p>
+    <p>If you are not redirected automatically, <a id="manualRedirectLink" href="#">click here</a>.</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const targetUrl = urlParams.get('url');
+            const manualRedirectLink = document.getElementById('manualRedirectLink');
+
+            if (targetUrl) {
+                manualRedirectLink.href = targetUrl;
+                // You can add a delay here if needed, e.g., for ad display
+                setTimeout(() => {
+                    window.location.replace(targetUrl);
+                }, 1500); // Redirect after 1.5 seconds
+            } else {
+                document.body.innerHTML = '<h2>Error: No URL specified for redirection.</h2><p>Please go back to the <a href="index.html">main site</a>.</p>';
+            }
+        });
+    </script>
+</body>
+</html>
