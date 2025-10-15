@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yuoseftiger80-dotcom.github.io/SagaTools.AI/sitemap.xml
